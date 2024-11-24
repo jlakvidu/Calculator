@@ -1,0 +1,72 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.display {
+    background: linear-gradient(145deg, #4a4a4a, #2f2f2f);
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    height: 70px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    border: none;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.5), 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #2980b9, #3498db);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.7), 0 12px 30px rgba(52, 152, 219, 0.5);
+}
+
+.btn:active {
+    transform: translateY(2px) scale(0.95);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+}
+
+.btn-secondary:hover {
+    background-color: #95a5a6;
+}
